@@ -1,4 +1,6 @@
-﻿namespace ZieScherper_09
+﻿using ZIeScherper_09.Classes;
+
+namespace ZieScherper_09
 {
 
     class Balletje
@@ -25,13 +27,7 @@
             }
             Y = Y + VectorY;
         }
-
-        public void TekenOpScherm()
-        {
-            Console.SetCursorPosition(X, Y);
-            Console.Write("O");
-        }
-        static void Main(string[] args)
+        static void Opdracht09_1()
         {
             Console.CursorVisible = false;
             Balletje bal1 = new Balletje();
@@ -56,7 +52,26 @@
                 Console.Clear();
             }
         }
+
+        public void TekenOpScherm()
+        {
+            Console.SetCursorPosition(X, Y);
+            Console.Write("O");
+        }
+        static void Main(string[] args)
+        {
+           Opdracht09_1();
+
+
+        }
+        public void opdracht09_2()
+        {
+            Auto mijnEersteAuto = new Auto();
+            Auto mijnAndereAuto;
+            Console.WriteLine(mijnEersteAuto);
+            mijnAndereAuto = new Auto();//opgelost door nieuwe auto object te maken
+            Console.WriteLine(mijnAndereAuto);
+        }
     }
 
-    
 }
