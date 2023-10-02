@@ -5,6 +5,28 @@ namespace ZieScherper_09
 
     class Balletje
     {
+        static void Main(string[] args)
+        {
+            Mens elvis = new Mens();
+            Mens bono = new Mens();
+            elvis.StartVerjongingskuur();
+            elvis.Praat();
+            bono.Praat();
+            Mens deelnemer1 = new Mens();
+            Mens deelnemer2 = new Mens();
+            deelnemer1.Praat();
+            deelnemer2.Praat();
+
+            deelnemer2.VeranderLief("phoebe");
+            deelnemer1.Praat();
+            deelnemer2.Praat();
+
+            deelnemer1.VeranderLief("camilla");
+            deelnemer1.Praat();
+            deelnemer2.Praat();
+            Console.ReadKey();
+
+        }
         //Eigenschappen
         public int X { get; set; }
         public int Y { get; set; }
@@ -58,12 +80,7 @@ namespace ZieScherper_09
             Console.SetCursorPosition(X, Y);
             Console.Write("O");
         }
-        static void Main(string[] args)
-        {
-           Opdracht09_1();
-
-
-        }
+        
         public void opdracht09_2()
         {
             Auto mijnEersteAuto = new Auto();
