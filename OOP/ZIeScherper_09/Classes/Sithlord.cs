@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace ZIeScherper_09.Classes
 {
-    internal class Sithlord
+    class SithLord
     {
+        private int energie;
+        private string sithName;
+        public void ResetLord(int resetWaarde)
+        {
+            energie = resetWaarde;
+        }
+        public int Energie
+        {
+            get
+            {
+                return energie;
+            }
+            private set
+            {
+                if (value >= 0)
+                    energie = value;
+            }
+
+        }
     }
 }

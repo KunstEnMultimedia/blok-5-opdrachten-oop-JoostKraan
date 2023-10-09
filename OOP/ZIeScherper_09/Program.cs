@@ -7,6 +7,13 @@ namespace ZieScherper_09
     {
         static void Main(string[] args)
         {
+            SithLord Vader = new SithLord();
+            Vader.Energie = 20; //set
+            Console.WriteLine($"Vaders energie is {Vader.Energie}"); //get
+
+        }
+        public void Opdracht09_3()
+        {
             Mens elvis = new Mens();
             Mens bono = new Mens();
             elvis.StartVerjongingskuur();
@@ -25,15 +32,14 @@ namespace ZieScherper_09
             deelnemer1.Praat();
             deelnemer2.Praat();
             Console.ReadKey();
-
         }
-        //Eigenschappen
+        
         public int X { get; set; }
         public int Y { get; set; }
         public int VectorX { get; set; }
         public int VectorY { get; set; }
 
-        //Methoden
+        
         public void Update()
         {
             if (X + VectorX >= Console.WindowWidth || X + VectorX < 0)
