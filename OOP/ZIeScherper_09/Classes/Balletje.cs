@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZIeScherper_09.Classes
 {
-    class Balletje
+    public class Balletje
     {
         //Eigenschappen
         public int X { get; set; }

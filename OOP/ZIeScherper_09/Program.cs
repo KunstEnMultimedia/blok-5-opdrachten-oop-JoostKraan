@@ -7,10 +7,29 @@ namespace ZieScherper_09
     {
         static void Main(string[] args)
         {
-            SithLord Vader = new SithLord();
-            Vader.Energie = 20; //set
-            Console.WriteLine($"Vaders energie is {Vader.Energie}"); //get
+           DateTime currentTime = DateTime.Now;
+            DateTime Birthday = new DateTime(2020, 5, 17);
+            Console.WriteLine(Birthday.ToString());
+            Birthday = Birthday.AddMinutes(10);
+            Console.WriteLine(Birthday.ToString());
+            if (DateTime.IsLeapYear(Birthday.Year))
+            {
+                Console.WriteLine("This is a leap year");
+            }
+            else
+            {
+                Console.WriteLine("This is not a leap year");
+            }
 
+
+            Console.ReadLine();
+
+        }
+        public void Opdracht09_4()
+        {
+            SithLord Vader = new SithLord();
+            //Vader.Energie = 20; //set
+            Console.WriteLine($"Vaders energie is {Vader.Energie}"); //get
         }
         public void Opdracht09_3()
         {
@@ -40,21 +59,6 @@ namespace ZieScherper_09
         public int VectorY { get; set; }
 
         
-        public void Update()
-        {
-            if (X + VectorX >= Console.WindowWidth || X + VectorX < 0)
-            {
-                VectorX = -VectorX;
-            }
-            X = X + VectorX;
-
-
-            if (Y + VectorY >= Console.WindowHeight || Y + VectorY < 0)
-            {
-                VectorY = -VectorY;
-            }
-            Y = Y + VectorY;
-        }
         static void Opdracht09_1()
         {
             Console.CursorVisible = false;
@@ -72,8 +76,8 @@ namespace ZieScherper_09
 
             while (true)
             {
-                bal1.Update();
-                bal2.Update(); //zo simpel!
+                //bal1.Update();
+                //bal2.Update(); //zo simpel!
                 bal1.TekenOpScherm();
                 bal2.TekenOpScherm(); //wow, zooo simpel :)
                 System.Threading.Thread.Sleep(50);
