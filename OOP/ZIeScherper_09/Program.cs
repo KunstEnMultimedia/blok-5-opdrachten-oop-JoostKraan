@@ -7,7 +7,7 @@ namespace ZieScherper_09
     {
         static void Main(string[] args)
         {
-           DateTime currentTime = DateTime.Now;
+            DateTime currentTime = DateTime.Now;
             DateTime Birthday = new DateTime(2020, 5, 17);
             Console.WriteLine(Birthday.ToString());
             Birthday = Birthday.AddMinutes(10);
@@ -20,8 +20,16 @@ namespace ZieScherper_09
             {
                 Console.WriteLine("This is not a leap year");
             }
-
-
+            
+            Nummers paar1 = new Nummers();
+            paar1.Getal1 = 12;
+            paar1.Getal2 = 34;
+            Console.WriteLine($"paar:{paar1.Getal1},{paar1.Getal2}");
+            Console.WriteLine($"Som = {paar1.Som()}");
+            Console.WriteLine($"Verschil = {paar1.Verschil()}");
+            Console.WriteLine($"Product = {paar1.Product()}");
+            Console.WriteLine($"Quotient = {paar1.Quotient()}");
+            
             Console.ReadLine();
 
         }
@@ -29,7 +37,7 @@ namespace ZieScherper_09
         {
             SithLord Vader = new SithLord();
             //Vader.Energie = 20; //set
-            Console.WriteLine($"Vaders energie is {Vader.Energie}"); //get
+            Console.WriteLine($"Vaders energie is {Vader.Energie}"); 
         }
         public void Opdracht09_3()
         {
@@ -76,10 +84,9 @@ namespace ZieScherper_09
 
             while (true)
             {
-                //bal1.Update();
-                //bal2.Update(); //zo simpel!
+                
                 bal1.TekenOpScherm();
-                bal2.TekenOpScherm(); //wow, zooo simpel :)
+                bal2.TekenOpScherm(); 
                 System.Threading.Thread.Sleep(50);
                 Console.Clear();
             }
@@ -96,7 +103,7 @@ namespace ZieScherper_09
             Auto mijnEersteAuto = new Auto();
             Auto mijnAndereAuto;
             Console.WriteLine(mijnEersteAuto);
-            mijnAndereAuto = new Auto();//opgelost door nieuwe auto object te maken
+            mijnAndereAuto = new Auto();
             Console.WriteLine(mijnAndereAuto);
         }
     }
