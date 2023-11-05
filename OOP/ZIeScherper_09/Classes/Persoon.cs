@@ -13,6 +13,8 @@ namespace ZIeScherper_09.Classes
         public string Achternaam { get; set; }
 
 
+
+
         private DateTime geboorteDatum;
 
 
@@ -44,4 +46,6 @@ namespace ZIeScherper_09.Classes
         }
 
     }
+
 }
+

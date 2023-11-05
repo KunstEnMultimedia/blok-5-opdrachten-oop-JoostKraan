@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ZIeScherper_09.Classes
 {
-    public class Balletje
+    class Balletje
     {
-        //Eigenschappen
+       
         public int X { get; set; }
         public int Y { get; set; }
         public int VectorX { get; set; }
@@ -19,16 +19,25 @@ namespace ZIeScherper_09.Classes
         {
             if (X + VectorX >= Console.WindowWidth || X + VectorX < 0)
             {
-                VectorX = -VectorX;
+                VectorX = -VectorX; 
             }
             X = X + VectorX;
 
-
             if (Y + VectorY >= Console.WindowHeight || Y + VectorY < 0)
             {
-                VectorY = -VectorY;
+                VectorY = -VectorY; 
             }
             Y = Y + VectorY;
+        }
+
+        public void TekenOpScherm()
+        {
+            
+            if ((Console.WindowWidth > 0) && (Console.WindowHeight > 0))
+            {
+                Console.SetCursorPosition(X, Y);
+                Console.Write($"O"); 
+            }
         }
     }
 }

@@ -3,33 +3,15 @@
 namespace ZieScherper_09
 {
 
-    class Balletje
+    class Program
     {
         static void Main(string[] args)
         {
-            DateTime currentTime = DateTime.Now;
-            DateTime Birthday = new DateTime(2020, 5, 17);
-            Console.WriteLine(Birthday.ToString());
-            Birthday = Birthday.AddMinutes(10);
-            Console.WriteLine(Birthday.ToString());
-            if (DateTime.IsLeapYear(Birthday.Year))
-            {
-                Console.WriteLine("This is a leap year");
-            }
-            else
-            {
-                Console.WriteLine("This is not a leap year");
-            }
+            opdracht09_6d();
             
-            Nummers paar1 = new Nummers();
-            paar1.Getal1 = 12;
-            paar1.Getal2 = 34;
-            Console.WriteLine($"paar:{paar1.Getal1},{paar1.Getal2}");
-            Console.WriteLine($"Som = {paar1.Som()}");
-            Console.WriteLine($"Verschil = {paar1.Verschil()}");
-            Console.WriteLine($"Product = {paar1.Product()}");
-            Console.WriteLine($"Quotient = {paar1.Quotient()}");
-            
+
+
+
             Console.ReadLine();
 
         }
@@ -69,6 +51,7 @@ namespace ZieScherper_09
         
         static void Opdracht09_1()
         {
+           
             Console.CursorVisible = false;
             Balletje bal1 = new Balletje();
             bal1.X = 20;
@@ -105,6 +88,56 @@ namespace ZieScherper_09
             Console.WriteLine(mijnEersteAuto);
             mijnAndereAuto = new Auto();
             Console.WriteLine(mijnAndereAuto);
+        }
+
+        public static void opdracht09_6b()
+        {
+            Nummers paar1 = new Nummers();
+            paar1.Getal1 = 12;
+            paar1.Getal2 = 34;
+            Console.WriteLine($"paar:{paar1.Getal1},{paar1.Getal2}");
+            Console.WriteLine($"Som = {paar1.Som()}");
+            Console.WriteLine($"Verschil = {paar1.Verschil()}");
+            Console.WriteLine($"Product = {paar1.Product()}");
+            Console.WriteLine($"Quotient = {paar1.Quotient()}");
+        }
+        public static void opdracht09_6c()
+        {
+            DateTime geboorteDag;
+            Console.WriteLine("Uw geboortedatum alstublieft : ");
+            geboorteDag = DateTime.Parse(Console.ReadLine());
+            DateTime vandaag = DateTime.Today;
+            float updated;
+            DateTime today = DateTime.Today;
+            DateTime nextBirthday = new DateTime(today.Year + 1, geboorteDag.Month, geboorteDag.Day);
+
+            int daysUntilNextBirthday = (nextBirthday - today).Days;
+            string dayOfTheWeek = nextBirthday.ToString("dddd");
+
+            Console.WriteLine($"Op je volgende verjaardag, volgend jaar, valt het op een {dayOfTheWeek}.");
+            Console.WriteLine($"Je moet nog {daysUntilNextBirthday} dagen wachten.");
+        }
+        public static void opdracht09_6d()
+        {
+            Rekening rekening1 = new Rekening();
+            Rekening rekening2 = new Rekening();
+
+            rekening1.naamKlant = "Pietje";
+            rekening1.rekeningNummer = "12";
+            rekening1.balance = 1000;
+            
+            rekening2.naamKlant = "Karel";
+            rekening2.rekeningNummer = "13";
+            rekening2.balance = 0;
+
+            rekening1.ToonInfo();
+            rekening2.ToonInfo();
+            rekening2.StortGeld(300); rekening1.HaalGeldAf(300);
+            rekening1.ToonInfo();
+            rekening2.ToonInfo();
+
+            Console.ReadLine();
+
         }
     }
 
