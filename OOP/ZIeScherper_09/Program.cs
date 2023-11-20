@@ -7,15 +7,43 @@ namespace ZieScherper_09
     {
         static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             opdracht09_6d();
             
 
+=======
+           
+>>>>>>> Stashed changes
 
 
             Console.ReadLine();
 
+<<<<<<< Updated upstream
+=======
         }
-        public void Opdracht09_4()
+
+        private static void Opdracht09_6()
+        {
+
+        }
+        private static void Opdracht09_5()
+        {
+            DateTime currentTime = DateTime.Now;
+            DateTime Birthday = new DateTime(2020, 5, 17);
+            Console.WriteLine(Birthday.ToString());
+            Birthday = Birthday.AddMinutes(10);
+            Console.WriteLine(Birthday.ToString());
+            if (DateTime.IsLeapYear(Birthday.Year))
+            {
+                Console.WriteLine("This is a leap year");
+            }
+            else
+            {
+                Console.WriteLine("This is not a leap year");
+            }
+>>>>>>> Stashed changes
+        }
+        private static void Opdracht09_4()
         {
             SithLord Vader = new SithLord();
             //Vader.Energie = 20; //set

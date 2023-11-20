@@ -8,6 +8,7 @@ namespace ZIeScherper_09.Classes
 {
     public class Rapport
     {
+<<<<<<< Updated upstream
         
         public int Percentage { get; set; }
 
@@ -27,5 +28,14 @@ namespace ZIeScherper_09.Classes
             else 
                 Console.WriteLine("ongeldige waarde");
         }
+=======
+        int percentage; 
+        public void printgraad()
+        {
+
+        }
+    
+    
+>>>>>>> Stashed changes
     }
 }
