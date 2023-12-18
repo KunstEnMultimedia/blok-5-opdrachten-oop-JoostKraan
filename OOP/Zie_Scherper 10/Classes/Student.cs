@@ -15,6 +15,17 @@ namespace Zie_Scherper_10.Classes
             this.naam = naam;
             
         }
-    
+        static public Student ZoekStudent(Student[] array, string naam)
+        {
+            Student gevonden = null;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i].naam == naam)
+                    gevonden = array[i];
+            }
+
+            return gevonden;
+        }
+
     }
 }

@@ -1,5 +1,8 @@
-﻿using System.Net.Http.Headers;
+﻿using System.ComponentModel.Design;
+using System.Net.Http.Headers;
+using System.Numerics;
 using Zie_Scherper_10.Classes;
+using static Zie_Scherper_10.Classes.Mens;
 
 namespace Zie_Scherper_10
 {
@@ -9,8 +12,37 @@ namespace Zie_Scherper_10
         int getal2 = 10;
         static void Main(string[] args)
         {
-           
+            
+            Student[] studentsArray = new Student[]
+            {
+                new Student("ValidName1"),
+                new Student("ValidName2"),
+                
+            };
 
+            
+            string searchName = "Jan";
+
+            
+            Student result = Student.ZoekStudent(studentsArray, searchName);
+
+         
+            if (result != null)
+            {
+                Console.WriteLine($"Naam: {result.naam} Karel");
+            }
+            else
+            {
+                Console.WriteLine($"Naam niet gevonden Karel");
+            }
+            Mens mama = new Mens();
+            mama.Geslacht = Geslachten.Vrouw;
+            mama.MaxLengte = 180;
+            Mens papa = new Mens();
+            papa.Geslacht = Geslachten.Man;
+            papa.MaxLengte = 169;
+
+            Mens baby = mama.PlantVoort(papa);
         }
 
         public static void opdracht10_01()
@@ -27,6 +59,30 @@ namespace Zie_Scherper_10
             Console.WriteLine("naam Student a:" + a.naam);
             Console.WriteLine("naam Student b:" + b.naam);
             Console.ReadLine();
+        }
+        public static void opdracht10_02()
+        {
+            Meting m1 = new Meting();
+            m1.Temperatuur = 26;
+            m1.OpgemetenDoor = "Lieven Scheire";
+            Meting m2 = new Meting();
+            m2.Temperatuur = 34;
+            m2.OpgemetenDoor = "Ann Dooms";
+            Console.WriteLine(m2.Temperatuur);
+            Meting m3 = new Meting();
+
+            m1.ToonMetingInKleur(ConsoleColor.Red);
+            Console.WriteLine(m2.Temperatuur);
+            Console.WriteLine(m3.Temperatuur);
+            m2.ToonMetingInKleur(ConsoleColor.DarkMagenta);
+            m3 = m2.GenereerRandomMeting();
+            Console.WriteLine(m3.Temperatuur);
+            Console.WriteLine(m2.Temperatuur);
+
+            Mens mens1 = new Mens();
+            Mens mens2 = new Mens();
+            mens1.PlantVoort();
+            mens2.PlantVoort();
         }
         
        
