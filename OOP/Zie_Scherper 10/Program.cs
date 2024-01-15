@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.Design;
 using System.Net.Http.Headers;
 using System.Numerics;
+using Zie_Scherper_10.classes;
 using Zie_Scherper_10.Classes;
 using static Zie_Scherper_10.Classes.Mens;
 
@@ -12,9 +13,10 @@ namespace Zie_Scherper_10
         int getal2 = 10;
         static void Main(string[] args)
         {
-          
-        }
 
+
+            
+        }
         public static void opdracht10_01()
         {
             int getal = 5;
@@ -79,13 +81,31 @@ namespace Zie_Scherper_10
             papa.MaxLengte = 169;
             Mens baby = mama.PlantVoort(papa);
         }
-        
-       
+
+
 
         static void VerhoogParameter(int a)
         {
             a++;
             Console.WriteLine($"In methode {a}");
+        }
+
+        static void opdracht10_05()
+        {
+            Console.WriteLine("Geef een getal aub");
+            int noemer = Convert.ToInt32(Console.ReadLine());
+            double resultaat = 100 / noemer;
+            Console.WriteLine($"100/{noemer} is gelijk aan {resultaat}");
+
+            try
+            {
+                string input = Console.ReadLine();
+                int converted = Convert.ToInt32(input);
+            }
+            catch ()
+            {
+                throw new Exception("Wow, dit loopt fout");
+            }
         }
     }
 }
