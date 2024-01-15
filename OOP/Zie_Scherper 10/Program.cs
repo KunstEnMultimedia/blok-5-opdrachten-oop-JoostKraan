@@ -12,37 +12,7 @@ namespace Zie_Scherper_10
         int getal2 = 10;
         static void Main(string[] args)
         {
-            
-            Student[] studentsArray = new Student[]
-            {
-                new Student("ValidName1"),
-                new Student("ValidName2"),
-                
-            };
-
-            
-            string searchName = "Jan";
-
-            
-            Student result = Student.ZoekStudent(studentsArray, searchName);
-
-         
-            if (result != null)
-            {
-                Console.WriteLine($"Naam: {result.naam} Karel");
-            }
-            else
-            {
-                Console.WriteLine($"Naam niet gevonden Karel");
-            }
-            Mens mama = new Mens();
-            mama.Geslacht = Geslachten.Vrouw;
-            mama.MaxLengte = 180;
-            Mens papa = new Mens();
-            papa.Geslacht = Geslachten.Man;
-            papa.MaxLengte = 169;
-
-            Mens baby = mama.PlantVoort(papa);
+          
         }
 
         public static void opdracht10_01()
@@ -81,8 +51,33 @@ namespace Zie_Scherper_10
 
             Mens mens1 = new Mens();
             Mens mens2 = new Mens();
-            mens1.PlantVoort();
-            mens2.PlantVoort();
+            //mens1.PlantVoort();
+            //mens2.PlantVoort();
+        }
+        public static void opdracht10_03()
+        {
+            Student[] studentsArray = new Student[]
+            {
+                new Student("ValidName1"),
+                new Student("ValidName2"),
+            };
+            string searchName = "Jan";
+            Student result = Student.ZoekStudent(studentsArray, searchName);
+            if (result != null)
+            {
+                Console.WriteLine($"Naam: {result.naam} Karel");
+            }
+            else
+            {
+                Console.WriteLine($"Naam niet gevonden Karel");
+            }
+            Mens mama = new Mens();
+            mama.Geslacht = Geslachten.Vrouw;
+            mama.MaxLengte = 180;
+            Mens papa = new Mens();
+            papa.Geslacht = Geslachten.Man;
+            papa.MaxLengte = 169;
+            Mens baby = mama.PlantVoort(papa);
         }
         
        

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zie_Scherper_10.Classes
+namespace Zie_Scherper_10.classes
 {
     public class Student
     {
