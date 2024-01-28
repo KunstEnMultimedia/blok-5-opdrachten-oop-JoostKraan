@@ -23,13 +23,13 @@ namespace Zie_Scherper_10
             VerhoogParameter(getal);
             Console.WriteLine($"Na methode {getal}");
 
-            Student a = new Student("Abba");
-            Student b = new Student("Queen");
-            Console.WriteLine("naam Student a:" + a.naam);
-            Console.WriteLine("naam Student b:" + b.naam);
-            b = a;
-            Console.WriteLine("naam Student a:" + a.naam);
-            Console.WriteLine("naam Student b:" + b.naam);
+            //Student a = new Student("Abba");
+            //Student b = new Student("Queen");
+            //Console.WriteLine("naam Student a:" + a.naam);
+            //Console.WriteLine("naam Student b:" + b.naam);
+           // b = a;
+            //Console.WriteLine("naam Student a:" + a.naam);
+            //Console.WriteLine("naam Student b:" + b.naam);
             Console.ReadLine();
         }
         public static void opdracht10_02()
@@ -60,8 +60,8 @@ namespace Zie_Scherper_10
         {
             Student[] studentsArray = new Student[]
             {
-                new Student("ValidName1"),
-                new Student("ValidName2"),
+                //new Student("ValidName1"),
+                //new Student("ValidName2"),
             };
             string searchName = "Jan";
             Student result = Student.ZoekStudent(studentsArray, searchName);
@@ -90,22 +90,22 @@ namespace Zie_Scherper_10
             Console.WriteLine($"In methode {a}");
         }
 
-        static void opdracht10_05()
-        {
-            Console.WriteLine("Geef een getal aub");
-            int noemer = Convert.ToInt32(Console.ReadLine());
-            double resultaat = 100 / noemer;
-            Console.WriteLine($"100/{noemer} is gelijk aan {resultaat}");
+        //static void opdracht10_05()
+        //{
+        //    Console.WriteLine("Geef een getal aub");
+        //    int noemer = Convert.ToInt32(Console.ReadLine());
+        //    double resultaat = 100 / noemer;
+        //    Console.WriteLine($"100/{noemer} is gelijk aan {resultaat}");
 
-            try
-            {
-                string input = Console.ReadLine();
-                int converted = Convert.ToInt32(input);
-            }
-            catch ()
-            {
-                throw new Exception("Wow, dit loopt fout");
-            }
-        }
+        //    try
+        //    {
+        //        string input = Console.ReadLine();
+        //        int converted = Convert.ToInt32(input);
+        //    }
+        //    catch ()
+        //    {
+        //        throw new Exception("Wow, dit loopt fout");
+        //    }
+        //}
     }
 }

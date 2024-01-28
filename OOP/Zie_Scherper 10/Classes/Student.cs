@@ -8,12 +8,15 @@ namespace Zie_Scherper_10.classes
 {
     public class Student
     {
+        public bool isStudentWerk { get; set; }
+        
         public string naam { get; set; } 
 
-        public Student(string naam)
+        public Student(string naam, bool isStudentWerk)
         {
+
             this.naam = naam;
-            
+            this.isStudentWerk = isStudentWerk;
         }
         static public Student ZoekStudent(Student[] array, string naam)
         {
