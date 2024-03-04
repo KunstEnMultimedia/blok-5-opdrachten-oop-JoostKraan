@@ -18,9 +18,17 @@ class Microfoon
 
     public Microfoon(bool isUitverkocht)
     {
+        if (isUitverkocht)
+        {
+            Console.WriteLine("is uitverkocht");
+        }
+        else if (!isUitverkocht)
+        {
+            Console.WriteLine("Is niet uitverkocht");
+        }
         Merk = "Onbekend";
         this.IsUitverkocht = true;
     }
-
+        
     
 }
