@@ -9,12 +9,13 @@ namespace Zie_Scherper_10.classes
     public class Student
     {
         public bool isStudentWerk { get; set; }
+        public int geboorteJaar { get; set; }
         
         public string naam { get; set; } 
 
-        public Student(string naam, bool isStudentWerk)
+        public Student()
         {
-
+            geboorteJaar = 2000;
             this.naam = naam;
             this.isStudentWerk = isStudentWerk;
         }

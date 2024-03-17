@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OOP\OOP.csproj" />
+    <ProjectReference Include="..\ZIeScherper_09\ZIeScherper_09.csproj" />
+    <ProjectReference Include="..\ZieScherper_11\ZieScherper_11.csproj" />
+    <ProjectReference Include="..\Zie_Scherper 10\ZieScherper_10.csproj" />
+  </ItemGroup>
+
 </Project>
