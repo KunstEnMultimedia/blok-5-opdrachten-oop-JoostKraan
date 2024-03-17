@@ -1,6 +1,7 @@
 ﻿
 
 using Zie_Scherper_10.classes;
+using ZieScherper_11.Classes;
 
 namespace ZieScherper_11
 {
@@ -8,8 +9,8 @@ namespace ZieScherper_11
     {
         static void Main(string[] args)
         {
-
-            Opdracht11_3();
+            //Opdracht11_4();
+           //Opdracht11_3();
             //Opdracht11_1
             //Opdracht11_2();
         }
@@ -36,8 +37,12 @@ namespace ZieScherper_11
         {
             Microfoon microfoon1 = new Microfoon(true);
             Microfoon microfoon2 = new Microfoon(false);
-            //Console.WriteLine(microfoon1);
             Console.ReadLine() ;
+        }
+        private static void Opdracht11_4()
+        {
+            EpicLibrary.TelOp(1,5);
+            EpicLibrary.ToonInfo();
         }
     }
 }

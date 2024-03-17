@@ -9,8 +9,8 @@ namespace Zie_Scherper_10.Classes
     class Mens
     {
 
-        private int geboorteJaar = 1970;
-        private string lief = "niemand";
+        public static int geboorteJaar = 1970;
+        private static string lief = "niemand";
 
         public void VeranderLief(string nieuwLief)
         {
@@ -50,5 +50,15 @@ namespace Zie_Scherper_10.Classes
             }
             return null;
         }
+        public static int Geboortejaar
+        {
+            get { return geboorteJaar; }
+            private set { geboorteJaar = value; }
+        }
+        public void Jarig()
+        {
+            geboorteJaar++;
+        }
     }
+    
 }
