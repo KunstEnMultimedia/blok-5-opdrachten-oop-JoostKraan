@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZieScherper_10", "Zie_Scher
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZieScherper_11", "ZieScherper_11\ZieScherper_11.csproj", "{66F28D24-2A17-45FF-B6DD-A896C114F399}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZieScherper_12", "ZieScherper_12\ZieScherper_12.csproj", "{7D2646A6-1C38-4C70-97FB-AB161FD723B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZieScherper_12", "ZieScherper_12\ZieScherper_12.csproj", "{7D2646A6-1C38-4C70-97FB-AB161FD723B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZieScherper_13", "ZieScherper_13\ZieScherper_13.csproj", "{4702B28C-8F82-4C01-AF11-7E3B44CAE8BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7D2646A6-1C38-4C70-97FB-AB161FD723B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D2646A6-1C38-4C70-97FB-AB161FD723B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D2646A6-1C38-4C70-97FB-AB161FD723B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4702B28C-8F82-4C01-AF11-7E3B44CAE8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4702B28C-8F82-4C01-AF11-7E3B44CAE8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4702B28C-8F82-4C01-AF11-7E3B44CAE8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4702B28C-8F82-4C01-AF11-7E3B44CAE8BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
