@@ -8,7 +8,11 @@ namespace ZieScherper_13
     {
         static void Main(string[] args)
         {
-
+            Frituur frituur1 = new Frituur();
+            Restaurant restaurant = new Restaurant();
+            frituur1.PoetsAlles();
+            restaurant.PoetsAlles();
+            Console.ReadLine();
            
         }
 
@@ -40,6 +44,10 @@ namespace ZieScherper_13
             Raket spaceX1 = new Raket();
             topGun.Vlieg();
             spaceX1.Vlieg();
+        }
+        static void Opdracht_04()
+        {
+
         }
     }
 }

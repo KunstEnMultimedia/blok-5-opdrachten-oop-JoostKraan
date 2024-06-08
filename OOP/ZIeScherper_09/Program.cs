@@ -7,19 +7,11 @@ namespace ZieScherper_09
     {
         static void Main(string[] args)
         {
-<<<<<<< Updated upstream
+
             opdracht09_6d();
-            
-
-=======
-           
->>>>>>> Stashed changes
-
-
             Console.ReadLine();
 
-<<<<<<< Updated upstream
-=======
+
         }
 
         private static void Opdracht09_6()
@@ -41,7 +33,7 @@ namespace ZieScherper_09
             {
                 Console.WriteLine("This is not a leap year");
             }
->>>>>>> Stashed changes
+
         }
         private static void Opdracht09_4()
         {
@@ -147,24 +139,24 @@ namespace ZieScherper_09
         }
         public static void opdracht09_6d()
         {
-            Rekening rekening1 = new Rekening();
-            Rekening rekening2 = new Rekening();
+            //Rekening rekening1 = new Rekening();
+            //Rekening rekening2 = new Rekening();
 
-            rekening1.naamKlant = "Pietje";
-            rekening1.rekeningNummer = "12";
-            rekening1.balance = 1000;
+            //rekening1.naamKlant = "Pietje";
+            //rekening1.rekeningNummer = "12";
+            //rekening1.balance = 1000;
             
-            rekening2.naamKlant = "Karel";
-            rekening2.rekeningNummer = "13";
-            rekening2.balance = 0;
+            //rekening2.naamKlant = "Karel";
+            //rekening2.rekeningNummer = "13";
+            //rekening2.balance = 0;
 
-            rekening1.ToonInfo();
-            rekening2.ToonInfo();
-            rekening2.StortGeld(300); rekening1.HaalGeldAf(300);
-            rekening1.ToonInfo();
-            rekening2.ToonInfo();
+            //rekening1.ToonInfo();
+            //rekening2.ToonInfo();
+            //rekening2.StortGeld(300); rekening1.HaalGeldAf(300);
+            //rekening1.ToonInfo();
+            //rekening2.ToonInfo();
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
         }
     }
