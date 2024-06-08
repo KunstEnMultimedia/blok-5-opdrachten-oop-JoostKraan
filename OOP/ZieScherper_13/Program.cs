@@ -9,8 +9,7 @@ namespace ZieScherper_13
         static void Main(string[] args)
         {
 
-            VeldArts RexGregor = new VeldArts();
-            Console.ReadLine();
+          
         }
 
         static void Opdracht_01()
@@ -20,12 +19,24 @@ namespace ZieScherper_13
             aDier.Eet();
             bPaard.Eet();
             bPaard.KanHinnikken = false;
-            // aDier.KanHinnikken = false; //!!! zal niet werken!
-            // 'Dier' does not contain a definition for 'KanHinnikken' and no accessible extension method 'KanHinnikken' a
-            Huis eenHuis = new Huis();
-            Villa groteVilla = new Villa();
-            //aDier.geboortejaar = 2;
-            VeldArts  sukkel = new VeldArts(true);
+            
+           
+
+        }
+
+        static void Opdracht_02()
+        {
+            Huis eenHuis = new Huis(true,1);
+            Villa groteVilla = new Villa(false,2);
+            Soldaat sukkel1 = new Soldaat(true);
+            VeldArts sukkel2 = new VeldArts();
+            Soldaat sukkel3 = new Soldaat(false);
+            VeldArts sukkel4 = new VeldArts(false);
+        }
+
+        static void Opdracht_03()
+        {
+
         }
     }
 }
