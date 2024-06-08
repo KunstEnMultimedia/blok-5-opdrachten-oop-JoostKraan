@@ -9,7 +9,7 @@ namespace ZieScherper_13
         static void Main(string[] args)
         {
 
-          
+           
         }
 
         static void Opdracht_01()
@@ -36,7 +36,10 @@ namespace ZieScherper_13
 
         static void Opdracht_03()
         {
-
+            Vliegtuig topGun = new Vliegtuig();
+            Raket spaceX1 = new Raket();
+            topGun.Vlieg();
+            spaceX1.Vlieg();
         }
     }
 }
