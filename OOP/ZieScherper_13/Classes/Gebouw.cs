@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace ZieScherper_13.Classes
 {
-    public class Gebouw
-    {    
-    }
-    public class Huis : Gebouw
+    class Gebouw
     {
-
+        public int AantalVerdiepingen { get; private set; }
+        public Gebouw(int verdiepingenIn)
+        {
+            AantalVerdiepingen = verdiepingenIn;
+        }
+    }
+    class Huis : Gebouw
+    {
+        public bool HeeftTuintje { get; private set; }
+        public Huis(bool tuintjeIn, int verdiepingenIn) : base(verdiepingenIn)
+        {
+            HeeftTuintje = tuintjeIn;
+        }
     }
     public class Villa : Huis
     {

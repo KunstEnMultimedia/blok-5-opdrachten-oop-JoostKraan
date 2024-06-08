@@ -8,6 +8,13 @@ namespace ZieScherper_13
     {
         static void Main(string[] args)
         {
+
+            VeldArts RexGregor = new VeldArts();
+            Console.ReadLine();
+        }
+
+        static void Opdracht_01()
+        {
             Dier aDier = new Dier();
             Paard bPaard = new Paard();
             aDier.Eet();
@@ -18,8 +25,7 @@ namespace ZieScherper_13
             Huis eenHuis = new Huis();
             Villa groteVilla = new Villa();
             //aDier.geboortejaar = 2;
-
-
+            VeldArts  sukkel = new VeldArts(true);
         }
     }
 }
