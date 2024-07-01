@@ -1,5 +1,6 @@
 ﻿using System;
 using ZieScherper_13.Classes;
+using ZIeScherper_09;
 
 
 namespace ZieScherper_13
@@ -8,11 +9,7 @@ namespace ZieScherper_13
     {
         static void Main(string[] args)
         {
-            Frituur frituur1 = new Frituur();
-            Restaurant restaurant = new Restaurant();
-            frituur1.PoetsAlles();
-            restaurant.PoetsAlles();
-            Console.ReadLine();
+           
            
         }
 
@@ -32,10 +29,10 @@ namespace ZieScherper_13
         {
             Huis eenHuis = new Huis(true,1);
             Villa groteVilla = new Villa(false,2);
-            Soldaat sukkel1 = new Soldaat(true);
-            VeldArts sukkel2 = new VeldArts();
-            Soldaat sukkel3 = new Soldaat(false);
-            VeldArts sukkel4 = new VeldArts(false);
+            Soldaat guy1 = new Soldaat(true);
+            VeldArts guy2 = new VeldArts();
+            Soldaat guy3 = new Soldaat(false);
+            VeldArts guy4 = new VeldArts(false);
         }
 
         static void Opdracht_03()
@@ -47,7 +44,11 @@ namespace ZieScherper_13
         }
         static void Opdracht_04()
         {
-
+            Frituur frituur1 = new Frituur();
+            Restaurant restaurant = new Restaurant();
+            frituur1.PoetsAlles();
+            restaurant.PoetsAlles();
+            Console.ReadLine();
         }
     }
 }

@@ -20,7 +20,7 @@ namespace ZieScherper_13.Classes
         public bool KanHinnikken { get; set; }
         public void MaakOuder()
         {
-            geboortejaar++; // !!! dit zal error geven!
+            geboortejaar++; 
         }
     }
 }
