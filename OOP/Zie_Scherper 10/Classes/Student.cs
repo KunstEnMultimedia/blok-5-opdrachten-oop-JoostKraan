@@ -10,6 +10,9 @@ namespace Zie_Scherper_10.classes
     {
         public bool isStudentWerk { get; set; }
         public int geboorteJaar { get; set; }
+
+        public string voorNaam { get; set; }
+        public string achterNaam { get; set; }  
         
         public string naam { get; set; } 
 
@@ -18,6 +21,11 @@ namespace Zie_Scherper_10.classes
             geboorteJaar = 2000;
             this.naam = naam;
             this.isStudentWerk = isStudentWerk;
+        }
+        public override bool Equals(Object o)
+        {
+            Student temp = (Student)o; 
+            return (geboorteJaar == temp.geboorteJaar && voorNaam == temp.achterNaam);
         }
         static public Student ZoekStudent(Student[] array, string naam)
         {

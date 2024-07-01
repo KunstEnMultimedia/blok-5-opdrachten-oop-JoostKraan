@@ -16,13 +16,13 @@ namespace ZieScherper_11
         }
         private static void Opdracht11_1()
         {
-            Student a = new Student("Karel",false);
+            //Student a = new Student("Karel",false);
             
-            Console.WriteLine($"Student : {a.naam} is {a.isStudentWerk}");
+            //Console.WriteLine($"Student : {a.naam} is {a.isStudentWerk}");
 
             
-            Student b = new Student("Theo",true);
-            Console.WriteLine($"Student : {b.naam} is {b.isStudentWerk}");
+            //Student b = new Student("Theo",true);
+            //Console.WriteLine($"Student : {b.naam} is {b.isStudentWerk}");
             Console.ReadLine();
         }
 
